@@ -7,7 +7,7 @@ module.exports = function(sequelize, DataTypes) {
 	 Favorites.associate = function(models) {
 	 	// Associating Business with deals
    		 // When a Business is deleted, also delete any associated deals
-	 	Favorites.belongsTo(models.Business, {
+	 	Favorites.belongsTo(models.Users, {
 	 		foreignKey: {
      	  	allowNull: false
      		}

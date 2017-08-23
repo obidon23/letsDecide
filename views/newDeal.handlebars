@@ -1,0 +1,28 @@
+<form class="newDeal" action="/api/deals" method = "POST">
+	<label>	Tittle:</label>
+	<input type="text" name="title" class="dealInputs">
+
+	<label>	Deal summary:</label>
+	<input type="text" name="body"><br>
+
+	<label>	Category:</label>
+	 <input type="radio" name="category" value="food">Food
+	 <input type="radio" name="category" value="fun">Entertainment<br>
+
+	<label>	Days Available:</label>
+	<input type="checkbox" name="daysAvailable" value="m">Monday
+	<input type="checkbox" name="daysAvailable" value="t">Tusday
+	<input type="checkbox" name="daysAvailable" value="w">Wednesday
+	<input type="checkbox" name="daysAvailable" value="th">Thursday
+	<input type="checkbox" name="daysAvailable" value="f">Friday
+	<input type="checkbox" name="daysAvailable" value="sat">Saturday
+	<input type="checkbox" name="daysAvailable" value="sun">Sunday
+
+	<label> Deal start time: </label>
+	<input type="time" name="dealStart">
+
+	<label> Deal End time: </label>
+	<input type="time" name="dealEnd">
+
+	<button>Submit</button>	
+</form>

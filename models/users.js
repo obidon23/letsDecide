@@ -75,7 +75,7 @@ module.exports = function(sequelize, DataTypes) {
 	 Users.associate = function(models) {
 	 	// Associating Business with deals
    		 // When a Business is deleted, also delete any associated deals
-	 	Users.hasMany(models.Deals, {
+	 	Users.hasMany(models.Favorites, {
 	 		onDelete: "cascade"
 	 	});
 	 };

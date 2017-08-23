@@ -68,7 +68,7 @@ module.exports = function(app) {
 	});
 	// api call: gets all cupons for business
 	app.get("/api/deals/:userId?", function(req, res) {
-		db.Favorites.findAll({
+		db.Deals.findAll({
 			where: {
 				id:req.params.userId
 			}
@@ -77,7 +77,8 @@ module.exports = function(app) {
 		})
 	});
 	// api call adds cupon -- need help
-	app.post("/api/deals/", function(req, res) {
+	app.post("/api/deals", function(req, res) {
+		req.body.daysAvailable = req.body.daysAvailable.toString();
 		db.Deals.create(req.body).then(function(dbDeals) {
 			res.json(dbDeals);
 		});
@@ -110,7 +111,7 @@ module.exports = function(app) {
 	});
 	// api call:deletes from favorite list
 	app.delete("/api/favorites/:favId", function(req, res) {
-		db.destroy({
+		db.Favorites.destroy({
 			where: {
 				id: req.params.favId
 			}
