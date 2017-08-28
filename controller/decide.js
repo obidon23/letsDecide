@@ -115,7 +115,7 @@ var router = express.Router();
 				id: businessId
 			}
 		}).then(function(results) {
-			console.log("bussiness results: " + results)
+			console.log("business results: " + results)
 			res.render("newDeal", results)
 		});
 	});

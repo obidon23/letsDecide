@@ -1,3 +1,217 @@
+body {
+/*	background-image: url('..//images/pattern.jpg');
+*/	background-size: contain;
+	z-index: -1;
+	position: relative;
+}
+
+.container-fluid {
+	padding-top: 60px;
+}
+.jumbotron {
+	background-image: url('../images/combo.jpg');
+	background-size: cover;
+	width: 100%;
+
+}
+
+.navbar {
+	background-color: #352F45;
+	opacity: 1;
+	vertical-align: middle;
+}
+
+.home-card {
+	height: 300px;
+	padding: 20px;
+	top: 50%;
+	transform-style: preserve-3d;
+	transition: .5s ease;
+}
+
+.home-card:hover .card {
+	transform: rotateY(180deg);
+}
+
+.card-front, .card-back	{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	transform: rotateY(180deg);
+/*	backface-visibility: hidden;
+*/
+}
+.card-front {
+	position: absolute;
+	display: flex;
+	align-items: center;
+}
+
+.card-back {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	transform: rotateY(180deg);
+}
+#card1 {
+	background-image: url('../images/rooftop.jpg');
+	background-size: contain;
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+	position: relative;
+	background-position: 50%;
+}
+
+#card2 {
+	
+	background-image: url('../images/drinks.jpeg');
+	background-size: contain;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background-repeat: no-repeat;
+	position: relative;
+	background-position: 50%;
+}
+
+#card3 {
+	background-image: url('../images/dice.jpg');
+	background-size: contain;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	position: relative;
+	background-position: 50%;
+}
+
+a {
+	color: #fff;
+}
+
+a:hover {
+	color: #pink;
+	text-decoration: none;
+}
+
+a::active {
+	text-decoration: none;
+}
+
+a::visited {
+	text-decoration: none;
+}
+
 h1 {
-	text-align:center;
+	font-family: 'Lobster', cursive;
+	color: #fff;
+	font-size: 48px;
+	z-index: 1;
+	opacity: 1;
+	text-align: center;
+}
+
+h2 {
+	font-family: 'Lobster', cursive;
+	color: #fff;
+	font-size: 30px;
+	vertical-align: middle;
+	z-index: 1;
+	opacity: 1;
+}
+
+h3 {
+	font-family: 'Lobster', cursive;
+	color: #352F45;
+	text-align: center;
+	position: relative;
+	font-size: 36px;
+	font-weight: bold;
+	z-index: 1;
+}
+
+h4 {
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	position: relative;
+	top: 50%;
+	font-size: 30px;
+	font-weight: bold;
+	z-index: 1;
+	opacity: 1;
+	text-align: center;
+	vertical-align: middle;
+    text-shadow: 2px 2px #333;
+}
+
+h5 {
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	position: relative;
+	font-size: 30px;
+	font-weight: bold;
+	z-index: 1;
+	opacity: 1;
+	text-align: center;
+    text-shadow: 2px 2px #333;
+}
+
+p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+}
+
+.active p {
+	color: #163238;
+	padding-left: 20px;
+    text-shadow: 1px 1px #fff;
+
+}
+
+.pending p {
+	color: #163238;
+	padding-left: 20px;
+    text-shadow: 1px 1px #fff;
+
+}
+
+.active a {
+	text-align: center;
+}
+
+.pending a {
+	text-align: center;
+}
+.sidebar {
+	background-color: #fff;
+	border-right: 2px solid #999;
+	opacity: .5;
+	padding: 10px;
+	line-height: 18px;
+	height: 700px;
+	color: #163238;
+}
+.food-deal {
+	margin: 20px;
+	padding: 5px;
+	border-radius: 15px;
+	height: 300px;
+	background-color: #7f6e53;
+
+}
+
+.active {
+
+}
+
+.pending {
+	background-color: #999;
+
+}
+
+footer {
+	text-align: center;
+	background-color: #352F45;
 }
