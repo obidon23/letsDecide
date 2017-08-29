@@ -20,7 +20,6 @@
 <body>
 
   <div class="container-fluid"> <!-- main container  -->
-
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <a class="navbar-brand" href="/"><h1>Let's Decide!</h1></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,12 +36,12 @@
                   <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Food &amp; Fun</a>
                       <div class="dropdown-menu" aria-labelledby="dropdown01">
-                          <a class="dropdown-item" href="/deals/food">Food Deals</a>
-                          <a class="dropdown-item" href="/search/food">Search for Food</a>
-                          <a class="dropdown-item" href="/random/food">Food Suggestions</a>
-                          <a class="dropdown-item" href="/deals/entertainment">Entertainment Deals</a>
-                          <a class="dropdown-item" href="/search/entertainment">Search for Entertainment</a>
-                          <a class="dropdown-item" href="/random/entertainment">Entertainment Suggestions</a>                      
+                          <a class="dropdown-item" href="/food-deals">Food Deals</a>
+                          <a class="dropdown-item" href="/food-search">Search for Food</a>
+                          <a class="dropdown-item" href="/food-random">Food Suggestions</a>
+                          <a class="dropdown-item" href="/entertainment-deals">Entertainment Deals</a>
+                          <a class="dropdown-item" href="/entertainment-search">Search for Entertainment</a>
+                          <a class="dropdown-item" href="/entertainment-random">Entertainment Suggestions</a>                      
                       </div>
                   </li>
               </ul>
@@ -70,75 +69,91 @@
          
         </div>
 
-    <hr>
 
-<div class="row main-content">
-      
-  <div class="col-lg-12 main-home">
-    <div class="row">
-      <div class="col-lg-4 home-card" >
-          <div class="nav-card" id="card1">
-            <div class="home front" id="card-background1">
-              <h4>
-                HOT DEALS
-              </h4>
-            </div>
-            <div class="home back">
-              <div><a href="/deals/food"><h3>Food</h3></a> </div>
-              <div><a href="/deals/entertainment"><h3>Entertainment</h3></a></div>
-            </div>
-          </div>  
-      </div>          
+    <div class="row main-content">
+      <div class="col-lg-3 sidebar">
+        <h3> Your Favorites
+        </h3>
 
-
-      <div class="col-lg-4 home-card">
-          <div class="nav-card" id="card2">
-            <div class="home front" id="card-background2">
-              <h4>
-                SEARCH
-              </h4>
-            </div>
-            <div class="home back">
-              <div><a href="/food-search"><h3>Food</h3></a> </div> <br />
-              <div><a href="/entertainment-search"><h3>Entertainment</h3></a></div>
-            </div>
-          </div>                
-      </div>
-      
-      <div class="col-lg-4 home-card">
-          <div class="nav-card" id="card3">
-            <div class="home front" id="card-background3">
-              <h4>
-                ROLL THE DICE
-              </h4>
-            </div>
-            <div class="home back">
-              <div><a href="/food-random"><h3>Food</h3></a> </div>
-              <div><a href="/entertainment-random"><h3>Entertainment</h3></a></div>
-          </div>                
-      </div>
-          -----      
-        </div>
-                
-      </div>
-
+        <h3> Search criteria
+        </h3>
       </div>    
-    </div>
+
+
+      <div class="col-lg-9 food-deals">
+        <div class="row">
+          <div class="col-lg-4 ">
+            <div class="deal-card active">
+              <h6>
+                BUY 1 GET 1
+              </h6>
+              <p class="deal-details"> Buy 1 combo meal and get a second for free!</p>
+              <hr>
+              <p class="deal-info"> Snarf's Sandwiches</p>
+              <p class="deal-info"> Available 2:00pm - 4:00pm</p>
+              <a class="deal-link" href="https://www.google.com/maps/place/Snarf's+Sandwiches/@39.6937505,-105.0410611,12z/data=!4m8!1m2!2m1!1ssnarfs+denver!3m4!1s0x0:0xdde568ab9fbe824!8m2!3d39.6786388!4d-104.966855" target='_blank'>Visit Website</a>
+
+            </div>  
+          </div>
+          <div class="col-lg-4">
+            <div class="deal-card active">
+              <h5>
+                HAPPY HOUR
+              </h5>
+
+              <p> Crimson &amp; Gold</p>
+              <p> Available 1:00pm - 6:00pm</p>
+              <p> $3.25 wells &amp; $2.00 domestic drafts</p>
+              <a class="" href="https://www.google.com/maps/place/Snarf's+Sandwiches/@39.6937505,-105.0410611,12z/data=!4m8!1m2!2m1!1ssnarfs+denver!3m4!1s0x0:0xdde568ab9fbe824!8m2!3d39.6786388!4d-104.966855" target='_blank'>Visit Website</a>
+            </div>  
+          </div>
+          <div class="col-lg-4">
+            <div class="deal-card pending">
+              <h5>
+                BUY 1 GET 1
+              </h5>
+
+              <p> Snarf's Sandwiches</p>
+              <p> Available 2:00pm - 4:00pm</p>
+              <p> Buy 1 combo meal and get a second for free!</p>
+              <a class="deal-link" href="https://www.google.com/maps/place/Snarf's+Sandwiches/@39.6937505,-105.0410611,12z/data=!4m8!1m2!2m1!1ssnarfs+denver!3m4!1s0x0:0xdde568ab9fbe824!8m2!3d39.6786388!4d-104.966855" target='_blank'>Visit Website</a>
+            </div>  
+          </div>        
+        </div>
+        <div class="row">
+          <div class="col-lg-4 home-button">
+            <!-- <div id="button4">
+            <h4>
+              EVENT DEALS
+            </h4>
+            </div>   -->
+          </div>
+          <div class="col-lg-4 home-button">
+            <!-- <div id="button5">
+            <h4>
+              EVENT FINDER
+            </h4>
+            </div>   -->
+          </div>
+          <div class="col-lg-4 home-button">
+            <!-- <div id="button6">
+            <h4>
+              EVENT DICE
+            </h4> -->
+            </div>  
+          </div>        
+        </div>    
+      </div>  
       <footer>
             <a href='/business'> Business </a> <a href='/aboutus'> About Us</a>
         <p>&copy; The Deciders 2017</p>
       </footer>
   </div> <!-- /container -->
+
 <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
-<script>
-$("#card1").flip()
-$("#card2").flip()
-$("#card3").flip()</script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 </body>
