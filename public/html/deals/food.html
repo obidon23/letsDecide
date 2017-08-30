@@ -71,110 +71,105 @@
 
 
     <div class="row main-content">
-      <div class="col-lg-3 sidebar">
-        <h3> Your Favorites
-        </h3>
+      <div class="row">
+        <div class="col-lg-3 sidebar">
+          <img src='../../assets/images/happyhour.jpg' width="100%">
+        </div>
 
-        <h3> Search criteria
-        </h3>
-      </div>    
+        <div class="col-lg-9 food-deals">
+          <div class="row">
+            <!-- First deal -->
+            <div class="col-lg-4">
+              <div class="card">
+                <div class="deal-card active front">
 
-
-      <div class="col-lg-9 food-deals">
-        <div class="row">
-          <!-- First deal -->
-          <div class="col-lg-4">
-            <div id="card1">
+                 <h6>
+                    {{this.title}}
+                 </h6>
+                  <p class="deal-details">{{this.body}}</p>
+                  <hr>
+                 <p class="deal-info"> Available {{this.dealStart}} - {{this.dealEnd}}</p>
+                  <p class="deal-info"> {{this.Business.businessName}}</p>
+                </div>
+                <div class="deal-card deal-back active back">
+                  <p class="deal-info"> {{this.Business.businessName}}</p>
+                  <p class="deal-info"> {{this.Business.streetAddress}}</p>
+                  <p class="deal-info"> {{this.Business.city}}, {{this.Business.state}}</p>
+                  <p class="deal-info"> {{this.Business.phone}}</p>
+                  <a class="deal-link" href="{{this.Business.webLink}}" target='_blank'>Visit Website</a>
+                </div>
+              </div>    
+            </div>
+            <!-- second deal -->
+            <div class="col-lg-4 ">
+              <div class="card">
               <div class="deal-card active front">
 
-               <h6>
-                  BUY ONE GET ONE
-               </h6>
-                <p class="deal-details"> Buy a combo meal and the second one is free!</p>
+                <h6>
+                  HAPPY HOUR
+                </h6>
+                 <p class="deal-details"> $3.50 wells with $2.50 domestic drafts</p>
                 <hr>
-               <p class="deal-info"> Available 3:00pm - 5:00pm</p>
-                <p class="deal-info"> Snarf's</p>
+                <p class="deal-info"> Available 4:00pm - 6:00pm</p>
+                <p class="deal-info"> Crimson &amp; Gold</p>
               </div>
               <div class="deal-card deal-back active back">
-                <p class="deal-info"> Snarf's</p>
-                <p class="deal-info"> 2990 e Evans Blvd</p>
+                <p class="deal-info"> Crimson &amp; Gold</p>
+                <p class="deal-info"> 2990 S University Blvd</p>
                 <p class="deal-info"> Denver, CO</p>
                 <p class="deal-info"> 303.999.5555</p>
                 <a class="deal-link" href="https://www.google.com/maps/place/Snarf's+Sandwiches/@39.6937505,-105.0410611,12z/data=!4m8!1m2!2m1!1ssnarfs+denver!3m4!1s0x0:0xdde568ab9fbe824!8m2!3d39.6786388!4d-104.966855" target='_blank'>Visit Website</a>
               </div>
-            </div>    
-          </div>
-          <!-- second deal -->
-          <div class="col-lg-4 ">
-            <div id="card2">
-            <div class="deal-card active front">
+              </div>  
+            </div>
+            <div class="col-lg-4 ">
+              <div class="card">
+              <div class="deal-card pending front">
 
-              <h6>
-                HAPPY HOUR
-              </h6>
-               <p class="deal-details"> $3.50 wells with $2.50 domestic drafts</p>
-              <hr>
-              <p class="deal-info"> Available 4:00pm - 6:00pm</p>
-              <p class="deal-info"> Crimson &amp; Gold</p>
+                <h6>
+                  $5 BURGER MEAL
+                </h6>
+                <p class="deal-details"> Enjoy a tasty burger with a domestic draft to wash it down.</p>
+                <hr>
+                <p class="deal-info"> Available All Day</p>
+                <p class="deal-info"> BURGER</p>
+              </div>
+              <div class="deal-card back">
+                <p class="deal-info"> BURGER</p>
+                <p class="deal-info"> 2990 S University Blvd</p>
+                <p class="deal-info"> Denver, CO</p>
+                <p class="deal-info"> 303.999.5555</p>
+                <a class="deal-link" href="https://www.google.com/maps/place/Snarf's+Sandwiches/@39.6937505,-105.0410611,12z/data=!4m8!1m2!2m1!1ssnarfs+denver!3m4!1s0x0:0xdde568ab9fbe824!8m2!3d39.6786388!4d-104.966855" target='_blank'>Visit Website</a>
+              </div>
+              </div>  
             </div>
-            <div class="deal-card deal-back active back">
-              <p class="deal-info"> Crimson &amp; Gold</p>
-              <p class="deal-info"> 2990 S University Blvd</p>
-              <p class="deal-info"> Denver, CO</p>
-              <p class="deal-info"> 303.999.5555</p>
-              <a class="deal-link" href="https://www.google.com/maps/place/Snarf's+Sandwiches/@39.6937505,-105.0410611,12z/data=!4m8!1m2!2m1!1ssnarfs+denver!3m4!1s0x0:0xdde568ab9fbe824!8m2!3d39.6786388!4d-104.966855" target='_blank'>Visit Website</a>
-            </div>
-            </div>  
-          </div>
-          <div class="col-lg-4 ">
-            <div id="card3">
-            <div class="deal-card pending front">
 
-              <h6>
-                $5 BURGER MEAL
-              </h6>
-              <p class="deal-details"> Enjoy a tasty burger with a domestic draft to wash it down.</p>
-              <hr>
-              <p class="deal-info"> Available All Day</p>
-              <p class="deal-info"> BURGER</p>
+            <div class="col-lg-4 home-button">
+              <div id="button4">
+              <h4>
+                EVENT DEALS
+              </h4>
+              </div>  
             </div>
-            <div class="deal-card  back">
-              <p class="deal-info"> BURGER</p>
-              <p class="deal-info"> 2990 S University Blvd</p>
-              <p class="deal-info"> Denver, CO</p>
-              <p class="deal-info"> 303.999.5555</p>
-              <a class="deal-link" href="https://www.google.com/maps/place/Snarf's+Sandwiches/@39.6937505,-105.0410611,12z/data=!4m8!1m2!2m1!1ssnarfs+denver!3m4!1s0x0:0xdde568ab9fbe824!8m2!3d39.6786388!4d-104.966855" target='_blank'>Visit Website</a>
+            <div class="col-lg-4 home-button">
+              <!-- <div id="button5">
+              <h4>
+                EVENT FINDER
+              </h4>
+              </div>   -->
             </div>
-            </div>  
-
-        </div>
-        <div class="row">
-          <div class="col-lg-4 home-button">
-            <!-- <div id="button4">
-            <h4>
-              EVENT DEALS
-            </h4>
-            </div>   -->
-          </div>
-          <div class="col-lg-4 home-button">
-            <!-- <div id="button5">
-            <h4>
-              EVENT FINDER
-            </h4>
-            </div>   -->
-          </div>
-          <div class="col-lg-4 home-button">
-            <!-- <div id="button6">
-            <h4>
-              EVENT DICE
-            </h4> -->
-            </div>  
+            <div class="col-lg-4 home-button">
+              <!-- <div id="button6">
+              <h4>
+                EVENT DICE
+              </h4> -->
+              </div>  
           </div>        
         </div>    
-      </div> 
+      </div>
     </div> 
       <footer>
-            <a href='/business'> Business </a> <a href='/aboutus'> About Us</a>
+            <p><a href='/business'>  Business  </a> | <a href='/aboutus'>  About Us</a></p>
         <p>&copy; The Deciders 2017</p>
       </footer>
   </div> <!-- /container -->
@@ -182,15 +177,15 @@
 <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 
-<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
-<script>
-$("#card1").flip()
-$("#card2").flip()
-$("#card3").flip()</script>
+  <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+  <script>  $(".card").flip() </script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 </body>
 </html>
