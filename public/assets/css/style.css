@@ -216,6 +216,18 @@ styling the sidebar
 .sidebar-div p {
 	margin: 20px 10px 3px -15px;
 }
+
+.sidebar h3 .arrow {
+	transform: rotate(-90deg);
+	transition: transform .3s;
+	transform-origin: center center;
+	display: inline-block;
+}
+
+.sidebar h3 .arrow.open {
+	transform: rotate(0deg);
+}
+
 /*===============================================================================
 styling the deal results
 ===============================================================================
